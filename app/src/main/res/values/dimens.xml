@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="frg_login_textsize">24sp</dimen>
+    <dimen name="frg_label_textsize">16sp</dimen>
+    <dimen name="frg_container_padding">24dp</dimen>
+    <dimen name="frg_edittext_textsize">16sp</dimen>
+    <dimen name="frg_textview2_textsize">12</dimen>
+    <dimen name="frgbutton_textsize">16sp</dimen>
+</resources>
