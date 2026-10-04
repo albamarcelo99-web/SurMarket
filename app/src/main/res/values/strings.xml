@@ -8,4 +8,8 @@
     <string name="frg_login_txvrecover">Recuperar contraseña</string>
     <string name="btn_frg_login">Iniciar Sesión</string>
     <string name="btn1_frg_login">Registrate aqui</string>
+    <string name="login_welconme">Bienvenido a SurMarket</string>
+    <string name="login_error">Usuario, Contraseña Invalidos</string>
+    <string name="userEmpy">Ingrese su Usuario</string>
+    <string name="passwordEmpy">Ingresa la Contraseña</string>
 </resources>
