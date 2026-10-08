@@ -57,23 +57,28 @@ class FragmentLogin : Fragment() {
     private fun FragmentLogin.SignIn() {
         val user= ETX_frg_login_username.text.toString().trim()
         val password= ETX_frg_login_password.toString().trim()
-        if (!verify_Integrity(user,password))
-        {
+        if (!verify_Integrity(user,password)) {
             return
         }
-        if(verify_Credentials(user,password))
-        {
-            Toast.makeText(requireContext(),getString(R.string.login_welconme), Toast.LENGTH_SHORT).show()
+            if (verify_Credentials(user, password)) {
+                Toast.makeText(
+                    requireContext(),
+                    getString(R.string.login_welconme),
+                    Toast.LENGTH_SHORT
+                ).show()
+            } else {
+                Toast.makeText(
+                    requireContext(),
+                    getString(R.string.login_error),
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
-        else
-        {
-            Toast.makeText(requireContext(),getString(R.string.login_error), Toast.LENGTH_SHORT).show()
-        }
-    }
     private fun verify_Integrity(user: String, password: String): Boolean {
         var res= true
         if(user.isEmpty()){
             ETX_frg_login_username.error= getString(R.string.userEmpy)
+            res=false
         }
         else
         {
@@ -81,6 +86,7 @@ class FragmentLogin : Fragment() {
         }
         if(password.isEmpty()){
             ETX_frg_login_password.error= getString(R.string.passwordEmpy)
+            res=false
         }
         else
         {

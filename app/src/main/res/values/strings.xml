@@ -12,4 +12,5 @@
     <string name="login_error">Usuario, Contraseña Invalidos</string>
     <string name="userEmpy">Ingrese su Usuario</string>
     <string name="passwordEmpy">Ingresa la Contraseña</string>
+    <string name="label_login_fragment">Login</string>
 </resources>
