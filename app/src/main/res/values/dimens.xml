@@ -6,4 +6,9 @@
     <dimen name="frg_edittext_textsize">16sp</dimen>
     <dimen name="frg_textview2_textsize">12</dimen>
     <dimen name="frgbutton_textsize">16sp</dimen>
+    <dimen name="TitleHeight">60dp</dimen>
+    <dimen name="ImagenViewIconSize">32dp</dimen>
+    <dimen name="ImagenViewIcon_Padding">4dp</dimen>
+    <dimen name="cardview_controls">48dp</dimen>
+    <dimen name="cardview_default_corner_radius">12dp</dimen>
 </resources>

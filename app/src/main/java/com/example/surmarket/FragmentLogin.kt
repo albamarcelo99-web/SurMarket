@@ -10,7 +10,6 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import kotlin.math.sign
 
 class FragmentLogin : Fragment() {
     private lateinit var ETX_frg_login_username: EditText
@@ -25,7 +24,7 @@ class FragmentLogin : Fragment() {
         savedInstanceState: Bundle?
     ): View?
     {
-        return inflater.inflate(R.layout.fracment_login,container,false)
+        return inflater.inflate(R.layout.fragment_login,container,false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -100,5 +99,3 @@ class FragmentLogin : Fragment() {
     }
 
 }
-
-

@@ -9,7 +9,7 @@
         android:id="@+id/login_fragment"
         android:name="com.example.surmarket.FragmentLogin"
         android:label="@string/label_login_fragment"
-        tools:layout="@layout/fracment_login">
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_login_to_products_list"
             app:destination="@+id/products_list_fragment"
