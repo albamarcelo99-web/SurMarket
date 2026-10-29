@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 
 class FragmentLogin : Fragment() {
     private lateinit var ETX_frg_login_username: EditText
@@ -63,14 +64,14 @@ class FragmentLogin : Fragment() {
                 Toast.makeText(
                     requireContext(),
                     getString(R.string.login_welconme),
-                    Toast.LENGTH_SHORT
-                ).show()
-            } else {
+                    Toast.LENGTH_SHORT).show()
+                findNavController().navigate(R.id.action_login_to_products_list)
+            }
+            else {
                 Toast.makeText(
                     requireContext(),
                     getString(R.string.login_error),
-                    Toast.LENGTH_SHORT
-                ).show()
+                    Toast.LENGTH_SHORT).show()
             }
         }
     private fun verify_Integrity(user: String, password: String): Boolean {
