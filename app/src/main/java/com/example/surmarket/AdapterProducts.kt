@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.constraintlayout.widget.ConstraintSet
 import androidx.recyclerview.widget.RecyclerView
 import com.example.surmarket.models.product
 
@@ -50,5 +49,7 @@ class AdapterProducts(
     override fun getItemCount(): Int {
         return productsList.size
     }
-
+    fun notifyChanged() {
+        notifyDataSetChanged()
+    }
 }

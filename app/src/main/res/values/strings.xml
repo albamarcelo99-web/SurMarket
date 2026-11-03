@@ -22,4 +22,11 @@
     <string name="label_ProductsList_fragment">Lista de Productos</string>
     <string name="category">Categoria</string>
     <string name="price">Precio</string>
+    <string name="addCart">Adicionando al Carrito</string>
+    <string name="product_image">Imagen del producto</string>
+    <string name="FRGAddProductsList_BTNAddImage">Añadir Imagen</string>
+    <string name="FRGAddProduct_TXVProductName">Nombre del Producto</string>
+    <string name="FRGAddProduct_ETXProductName">Nombre</string>
+    <string name="FRGAddProduct_TXVProductPrice">Precio</string>
+    <string name="FRGAddProduct_ETXProductPrice">Precio</string>
 </resources>
