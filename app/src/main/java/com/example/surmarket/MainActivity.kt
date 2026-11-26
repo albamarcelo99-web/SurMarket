@@ -21,14 +21,15 @@ class MainActivity : AppCompatActivity(){
         bottomNavigation.setupWithNavController(navController)
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            when (destination.id) {
-                R.id.login_Fragment-> {
+            when (destination.id){
+                R.id.LoginFragment ->{
+                    bottomNavigation.visibility = View.INVISIBLE
+
+                }
+                R.id.addProductFragment ->{
                     bottomNavigation.visibility = View.INVISIBLE
                 }
-                R.id.addProductFragment-> {
-                    bottomNavigation.visibility = View.INVISIBLE
-                }
-                else -> {
+                else ->{
                     bottomNavigation.visibility = View.VISIBLE
                 }
             }

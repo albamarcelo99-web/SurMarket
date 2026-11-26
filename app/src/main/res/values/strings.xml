@@ -1,17 +1,17 @@
 <resources>
     <string name="app_name">SurMarket</string>
-    <string name="frg_login_title">INICIAR SESIÓN</string>
-    <string name="frg_login_txvusername">Nombre de usuario</string>
-    <string name="frg_login_etxusername">Ingresa tu nombre de usuario</string>
-    <string name="frg_login_txvpassword">Contraseña</string>
-    <string name="frg_login_etxpassword">Ingrese tu contraseña</string>
-    <string name="frg_login_txvrecover">Recuperar contraseña</string>
-    <string name="btn_frg_login">Iniciar Sesión</string>
-    <string name="btn1_frg_login">Registrate aqui</string>
-    <string name="login_welconme">Bienvenido a SurMarket</string>
-    <string name="login_error">Usuario, Contraseña Invalidos</string>
-    <string name="userEmpy">Ingrese su Usuario</string>
-    <string name="passwordEmpy">Ingresa la Contraseña</string>
+    <string name="FRGLogin_Title">Iniciar Sesión</string>
+    <string name="FRGLogin_TXVUserName">Nombre de Usuario</string>
+    <string name="FRGLogin_ETXUserName">Ingresa tu nombre de usuario</string>
+    <string name="FRGLogin_TXVPassword">Contraseña</string>
+    <string name="FRGLogin_ETXPassword">Ingresa tu contraseña</string>
+    <string name="FRGLogin_TXVRecoverPassword">Recuperar contraseña</string>
+    <string name="FRGLogin_BTNLogin">Iniciar Sesion</string>
+    <string name="FRGLogin_BTNRegister">Registrate Aqui</string>
+    <string name="loginWelcome">Bienvenido a SurMarket</string>
+    <string name="loginError">Usuario o Contraseña Invalidos</string>
+    <string name="userEmpty">Ingrese su Nombre de Usuario</string>
+    <string name="passwordEmpty">Ingrese su Contraseña</string>
     <string name="label_login_fragment">Login</string>
     <string name="FRGProductsList_title">Tienda Digital SurMarket</string>
     <string name="Shopping_Cart">Carrito de compras</string>
@@ -70,4 +70,9 @@
     <string name="labelProfileFragment">Perfil</string>
     <string name="labelCartFragment">Carrito</string>
     <string name="cart">Carrito</string>
+    <string name="FRGProductsList_cart">Carrito de Compras</string>
+    <string name="Cart_Empty">Vaciar</string>
+    <string name="back">Atras</string>
+    <string name="labelProductsListFragment">Lista de Productos</string>
+    <string name="labelLoginFragment">Login</string>
 </resources>

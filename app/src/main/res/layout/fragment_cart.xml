@@ -1,7 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".FragmentCart">
+
+    <!-- ENCABEZADO DEL CARRITO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TitleHeight"
+        android:orientation="horizontal"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="@dimen/FRGMargintop">
+
+        <!-- BOTON REGRESAR -->
+        <ImageView
+            android:id="@+id/IMV_FRGProductsBack"
+            android:layout_width="@dimen/ImagenViewIconSize"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:contentDescription="@string/back"
+            android:focusable="true"
+            android:padding="@dimen/ImagenViewIcon_Padding"
+            android:src="@drawable/ic_back" />
+
+        <!-- TITULO -->
+        <TextView
+            android:id="@+id/TXV_FRGProductsList_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/FRGProductsList_cart"
+            android:textSize="@dimen/frg_login_textsize"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- BOTON VACIAR CARRITO -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/IMV_FRGProductsList_Cart"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:clickable="true"
+                android:contentDescription="@string/Shopping_Cart"
+                android:focusable="true"
+                android:padding="4dp"
+                android:src="@drawable/ic_bin" />
+
+            <TextView
+                android:id="@+id/TXV_FRGProductsList_EmptyCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Cart_Empty"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- LISTA DE PRODUCTOS DEL CARRITO -->
+    <include
+        android:id="@+id/INC_FRGCart_Products"
+        layout="@layout/item_cart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <!-- RESUMEN DE COMPRA -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#F0F2F9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <!-- SUBTOTAL -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Subtotal:"
+                    android:textSize="14sp"
+                    android:textColor="#263238" />
+
+                <TextView
+                    android:id="@+id/TXV_FRGCart_Subtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13.74 Bs."
+                    android:textSize="14sp"
+                    android:textColor="#263238" />
+
+            </LinearLayout>
+
+
+            <!-- ENVIO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Envío:"
+                    android:textSize="14sp"
+                    android:textColor="#263238" />
+
+                <TextView
+                    android:id="@+id/TXV_FRGCart_Shipping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00 Bs."
+                    android:textSize="14sp"
+                    android:textColor="#263238" />
+
+            </LinearLayout>
+
+
+            <!-- TOTAL -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total:"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#344563" />
+
+                <TextView
+                    android:id="@+id/TXV_FRGCart_Total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13.74 Bs."
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#087BFA" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- BOTON FINALIZAR COMPRA -->
+    <Button
+        android:id="@+id/BTN_FRGCart_Checkout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#087BFA"
+        android:drawableStart="@drawable/ic_shopping_cart"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/white"
+        android:gravity="center"
+        android:text="Finalizar Compra"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:elevation="0dp" />
 
 </LinearLayout>
+

@@ -8,89 +8,82 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="@dimen/frg_container_padding"
-        >
+        android:padding="@dimen/FRGContainerPadding">
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1"/>
         <TextView
-            android:id="@+id/TXV_frg_login_title"
+            android:id="@+id/TXV_FRGLogin_Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/frg_login_title"
-            android:textSize="@dimen/frg_login_textsize"
+            android:text="@string/FRGLogin_Title"
+            android:textSize="@dimen/FRGTitleTextSize"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_marginBottom="30dp"
             />
         <TextView
-            android:id="@+id/TXV_frg_login_username"
+            android:id="@+id/TXV_FRGLogin_UserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/frg_login_txvusername"
-            android:textSize="@dimen/frg_label_textsize"
-            android:layout_marginBottom="30dp"
+            android:text="@string/FRGLogin_TXVUserName"
+            android:textSize="@dimen/FRGLabelTextSize"
             />
-
         <EditText
-            android:id="@+id/ETX_frg_login_username"
+            android:id="@+id/ETX_FRGLogin_UserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16sp"
-            android:hint="@string/frg_login_etxusername"
+            android:hint="@string/FRGLogin_ETXUserName"
+            android:textSize="@dimen/FRGEditTextTextSize"
             android:inputType="text"
-            android:textSize="@dimen/frg_edittext_textsize" />
-
+            android:layout_marginBottom="16dp"
+            />
         <TextView
-            android:id="@+id/TXV_frg_login_password"
+            android:id="@+id/TXV_FRGLogin_Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/frg_login_txvpassword"
-            android:textSize="@dimen/frg_label_textsize"
+            android:text="@string/FRGLogin_TXVPassword"
+            android:textSize="@dimen/FRGLabelTextSize"
             />
         <EditText
-            android:id="@+id/ETX_frg_login_password"
+            android:id="@+id/ETX_FRGLogin_Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/frg_login_etxpassword"
-            android:textSize="@dimen/frg_edittext_textsize"
+            android:hint="@string/FRGLogin_ETXPassword"
+            android:textSize="@dimen/FRGEditTextTextSize"
             android:inputType="textPassword"
-            android:layout_marginBottom="16sp"
+            android:layout_marginBottom="16dp"
             />
         <TextView
-            android:id="@+id/txv_frg_login_recover"
+            android:id="@+id/TXV_FRGLogin_RecoverPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/frg_login_txvrecover"
+            android:text="@string/FRGLogin_TXVRecoverPassword"
             android:clickable="true"
             android:focusable="true"
-            android:textSize="@dimen/frg_textview2_textsize"
+            android:textSize="@dimen/FRGTextView2TextSize"
             android:layout_marginBottom="30dp"
             />
-
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
-            />
+            android:layout_weight="2"/>
         <Button
-            android:id="@+id/btn_frg_login"
+            android:id="@+id/BTN_FRGLogin_Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn_frg_login"
-            android:textSize="@dimen/frgbutton_textsize"
+            android:text="@string/FRGLogin_BTNLogin"
+            android:textSize="@dimen/FRGButtonTextSize"
             android:textStyle="bold"
             />
         <Button
-            android:id="@+id/btn1_frg_login"
+            android:id="@+id/BTN_FRGLogin_Register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn1_frg_login"
-            android:textSize="@dimen/frgbutton_textsize"
+            android:text="@string/FRGLogin_BTNRegister"
+            android:textSize="@dimen/FRGButtonTextSize"
             android:textStyle="bold"
             />
     </LinearLayout>
-
 </ScrollView>
