@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph.xml"
-    app:startDestination="@id/login_fragment"
+    app:startDestination="@id/login_Fragment"
     >
     <fragment
-        android:id="@+id/login_fragment"
+        android:id="@+id/login_Fragment"
         android:name="com.example.surmarket.FragmentLogin"
         android:label="@string/label_login_fragment"
         tools:layout="@layout/fragment_login">
@@ -21,4 +21,15 @@
         android:label="@string/label_ProductsList_fragment"
         tools:layout="@layout/fragment_products_list">
     </fragment>
+    <action
+        android:id="@+id/action_products_list_to_add_product"
+        app:destination="@+id/addProductFragment"
+        />
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.example.surmarket.FragmentAddProduct"
+        android:label="@string/labelAddProductFragment"
+        tools:layout="@layout/fragment_add_product">
+    </fragment>
+
 </navigation>

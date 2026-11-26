@@ -29,4 +29,20 @@
     <string name="FRGAddProduct_ETXProductName">Nombre</string>
     <string name="FRGAddProduct_TXVProductPrice">Precio</string>
     <string name="FRGAddProduct_ETXProductPrice">Precio</string>
+    <string name="FRGAddProduct_TXVProductStock">Cantidad</string>
+    <string name="FRGAddProduct_ETXProductStock">Cantidad</string>
+    <string name="FRGAddProduct_TXVProductDescription">Descripcion</string>
+    <string name="FRGAddProduct_ETXProductDescription">Descripcion</string>
+    <string name="category_Men">Ropa de Varon</string>
+    <string name="category_women">Ropa de Mujer</string>
+    <string name="category_Children">Ropa de Niños</string>
+    <string name="category_Baby">Ropa de Bebe</string>
+    <string name="category_Shoes">Calzados</string>
+    <string name="category_Accessories">Accesorios</string>
+    <string name="category_Other">Otros</string>
+    <string name="availability_available">Disponible</string>
+    <string name="availability_notavailable">No disponible</string>
+    <string name="FRGAddProductsList_BTNAddProduct">Añadir Producto</string>
+    <string name="labelAddProductFragment">Añadir producto</string>
+    <string name="addProduct">Añadir nuevo producto</string>
 </resources>
