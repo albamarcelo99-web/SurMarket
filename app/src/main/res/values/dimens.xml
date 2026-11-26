@@ -25,4 +25,18 @@
     <dimen name="cardview_default_corner_radius_2">28dp</dimen>
     <dimen name="textView_multiline_height">120dp</dimen>
     <dimen name="chip_margin_end">8dp</dimen>
+    ----
+    <dimen name="FRGContainerPadding">24dp</dimen>
+    <dimen name="imageViewIconSize">32dp</dimen>
+    <dimen name="imageViewIcon_Padding">4dp</dimen>
+    <dimen name="titleTextSize">20sp</dimen>
+    <dimen name="profile_avatar_size">100dp</dimen>
+    <dimen name="profile_avatar_radius">38dp</dimen>
+    <dimen name="profile_icon_bg_size">32dp</dimen>
+    <dimen name="profile_icon_bg_radius">8dp</dimen>
+    <dimen name="profile_icon_size">16dp</dimen>
+    <dimen name="profile_row_margin_bottom">6dp</dimen>
+    <dimen name="profile_text_margin_start">12dp</dimen>
+    <dimen name="FRGTextView2TextSize">14sp</dimen>
+    <dimen name="FRGLabelTextSize">16sp</dimen>
 </resources>

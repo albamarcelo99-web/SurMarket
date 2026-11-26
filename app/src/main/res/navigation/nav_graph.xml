@@ -31,5 +31,19 @@
         android:label="@string/labelAddProductFragment"
         tools:layout="@layout/fragment_add_product">
     </fragment>
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.example.surmarket.FragmentProfile"
+        android:label="@string/labelProfileFragment"
+        tools:layout="@layout/fragment_profile"
+        >
+    </fragment>
+    <fragment
+        android:id="@+id/CartFragment"
+        android:name="com.example.surmarket.FragmentCart"
+        android:label="@string/labelCartFragment"
+        tools:layout="@layout/fragment_cart"
+        >
+    </fragment>
 
 </navigation>
